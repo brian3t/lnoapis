@@ -9,8 +9,12 @@
  */
 
 module.exports.policies = {
-
-  '*': 'is-logged-in',
+/*  UserController: {
+    // Apply the 'isLoggedIn' policy to the 'update' action of 'UserController'
+    update: 'isLoggedIn',
+    index: true
+  },*/
+  '*': true,
 
   // Bypass the `is-logged-in` policy for:
   'entrance/*': true,
